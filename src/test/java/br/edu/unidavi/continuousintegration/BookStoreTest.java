@@ -30,14 +30,12 @@ public class BookStoreTest {
         assertEquals(8, bookStore.calculateBasketCost(books), EQUALITY_TOLERANCE);
     }
 
-    @Ignore("Remove to run test")
     @Test
     public void twoOfSameBook() {
         List<Integer> books = Arrays.asList(1, 1);
         assertEquals(16, bookStore.calculateBasketCost(books), EQUALITY_TOLERANCE);
     }
 
-    @Ignore("Remove to run test")
     @Test
     public void emptyBasket() {
         List<Integer> books = Collections.emptyList();

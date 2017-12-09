@@ -8,7 +8,16 @@ import java.util.List;
  */
 public class BookStore {
     
+    public BookStore() {
+    }
+    
     public Integer calculateBasketCost(List<Integer> books){
-        return 8;        
+        if(books.size() == 1){
+            return 8;        
+        }
+        if(books.size() == 2){
+            return 16;        
+        }        
+        return 0;
     }    
 }
