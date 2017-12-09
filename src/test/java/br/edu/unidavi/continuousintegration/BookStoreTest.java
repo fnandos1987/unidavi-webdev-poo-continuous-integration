@@ -27,19 +27,19 @@ public class BookStoreTest {
     @Test
     public void onlyASingleBook() {
         List<Integer> books = Collections.singletonList(1);
-        assertEquals(8, bookStore.calculateBasketCost(books), EQUALITY_TOLERANCE);
+        assertEquals(8.0, bookStore.calculateBasketCost(books), EQUALITY_TOLERANCE);
     }
 
     @Test
     public void twoOfSameBook() {
         List<Integer> books = Arrays.asList(1, 1);
-        assertEquals(16, bookStore.calculateBasketCost(books), EQUALITY_TOLERANCE);
+        assertEquals(16.0, bookStore.calculateBasketCost(books), EQUALITY_TOLERANCE);
     }
 
     @Test
     public void emptyBasket() {
         List<Integer> books = Collections.emptyList();
-        assertEquals(0, bookStore.calculateBasketCost(books), EQUALITY_TOLERANCE);
+        assertEquals(0.0, bookStore.calculateBasketCost(books), EQUALITY_TOLERANCE);
     }
 
     @Ignore("Remove to run test")
@@ -67,7 +67,7 @@ public class BookStoreTest {
     @Test
     public void fiveDifferentBooks() {
         List<Integer> books = Arrays.asList(1, 2, 3, 4, 5);
-        assertEquals(30, bookStore.calculateBasketCost(books), EQUALITY_TOLERANCE);
+        assertEquals(30.0, bookStore.calculateBasketCost(books), EQUALITY_TOLERANCE);
     }
 
     @Ignore("Remove to run test")

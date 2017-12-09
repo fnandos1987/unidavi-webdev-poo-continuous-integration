@@ -7,6 +7,6 @@ package br.edu.unidavi.continuousintegration;
 public class App {
     
     public static void main(String[] args) {
-        System.out.println("App");
+        throw new UnsupportedOperationException("not impemented yet!");
     }    
 }
